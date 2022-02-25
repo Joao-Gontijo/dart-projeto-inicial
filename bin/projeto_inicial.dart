@@ -29,4 +29,8 @@ void main(List<String> arguments) {
   String apresentacao =
       'Meu nome é ${joao[2]} e tenho ${joao[0]} anos. Sou maior de idade? $maiorIdade';
   print(apresentacao);
+
+  for (int i = 1; i <= 5; i++) {
+    print("Executando o for $i vezes");
+  }
 }
