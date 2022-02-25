@@ -5,7 +5,7 @@ void main(List<String> arguments) {
   final double altura;
   altura = 1.86;
 
-  bool geek = true;
+  final bool maiorIdade;
 
   const String nome = 'João Victor';
   String sobrenome = "Gontijo";
@@ -21,6 +21,12 @@ void main(List<String> arguments) {
   List<String> listaNomes = ['João', 'Ana', 'Aldo', 'Marcos', 'Gabriel'];
 
   List<dynamic> joao = [idade, altura, nome];
-  String apresentacao = 'Meu nome é ${joao[2]} e tenho ${joao[1]} anos';
+  if (idade >= 18) {
+    maiorIdade = true;
+  } else {
+    maiorIdade = false;
+  }
+  String apresentacao =
+      'Meu nome é ${joao[2]} e tenho ${joao[0]} anos. Sou maior de idade? $maiorIdade';
   print(apresentacao);
 }
